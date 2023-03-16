@@ -2,19 +2,20 @@
 
 namespace Hexatex\LaravelHashId;
 
-use Vinkla\Hashids\Facades\Hashids;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use Vinkla\Hashids\Facades\Hashids;
 
 /**
  * Hexatex\LaravelHashId\HasHashId
  *
  * @property string $hash_id
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|\Hexatex\Slug\Slug byHashId($hashId)
  */
 trait HasHashId
 {
-	/*
+    /*
      * Accessors & Mutators
      */
     /** Hash Id */

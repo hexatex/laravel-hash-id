@@ -2,9 +2,9 @@
 
 namespace Hexatex\LaravelHashId;
 
+use Hexatex\LaravelHashId\Commands\LaravelHashIdCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Hexatex\LaravelHashId\Commands\LaravelHashIdCommand;
 
 class LaravelHashIdServiceProvider extends PackageServiceProvider
 {
