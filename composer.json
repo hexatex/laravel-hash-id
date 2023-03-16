@@ -1,24 +1,25 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "hexatex/laravel-hash-id",
+    "description": "This package makes it easy to add hash id to a laravel model",
     "keywords": [
-        ":vendor_name",
+        "hexatex",
         "laravel",
-        ":package_slug"
+        "laravel-hash-id"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/hexatex/laravel-hash-id",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Cory Baumer",
+            "email": "cory.j.baumer@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
+        "illuminate/contracts": "^10.0",
         "spatie/laravel-package-tools": "^1.14.0",
-        "illuminate/contracts": "^10.0"
+        "vinkla/hashids": "^11.0"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -35,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Hexatex\\LaravelHashId\\": "src",
+            "Hexatex\\LaravelHashId\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Hexatex\\LaravelHashId\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +62,9 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Hexatex\\LaravelHashId\\LaravelHashIdServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
             }
         }
     },
